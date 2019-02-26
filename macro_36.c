@@ -35,16 +35,16 @@ void insert(MDT mdt_element,MDT *MDT, int *MDT_size)
 	*MDT_size++;
 }
 
-void insert(MDT mdt_element,MDT *MDT, int *MDT_size)
+void insert(MNT mnt_element,MNT *MNT, int *MNT_size)
 {
-	int size=((*MDT_size/MDT_SIZE_INIT)+1)*MDT_SIZE_INIT;
-	if(*MDT_size<size)
+	int size=((*MNT_size/MNT_SIZE_INIT)+1)*MNT_SIZE_INIT;
+	if(*MNT_size<size)
 	{
-		realloc(MDT,size+MDT_SIZE_INIT);
+		realloc(MNT,size+MNT_SIZE_INIT);
 	}
 
-	MDT[*MDT_size]=mdt_element;
-	*MDT_size++;
+	MNT[*MNT_size]=mnt_element;
+	*MNT_size++;
 }
 
 void main()
