@@ -49,11 +49,30 @@ void insert(MNT mnt_element,MNT *MNT, int *MNT_size)
 
 void main()
 {
+	int i;
 	//Creating the database variables
 	MDT MDT[MDT_SIZE_INIT];
 	MNT MNT[MNT_SIZE_INIT];
+	int MDT_size = 0, MNT_size=0;
 
 	//Read the file containing the MACRO
-	FILE *fp=fopen("macroprogram.txt","r");
+	FILE *file=fopen("macroprogram.txt","r");
+	char *line=NULL;
+	ssize_t line_len;
+	size_t len=0;
 
+	while((line_len=getline(&line,&len,file))!=-1)
+	{
+		if (strcmp(line,"MACRO")!=0)
+		{
+			line_len=getline(&line,&len,file);
+			for(i=0;i<line_len;i++)
+			{
+				if (line[i]=="&")
+				{
+					
+				}
+			}
+		}
+	}
 }
