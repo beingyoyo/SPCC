@@ -2,9 +2,27 @@
 #include<iostream>
 #include<fstream>
 #include<string>
+#include<map>
+#include<regex>
 
 //Structures for the various tokens
-struct arith_operators{string ar_op;};
-struct keywords{string key;};
-struct rel_operators{string re_op;};
-struct bitw_operators{string bit_op;};
+struct token_format_entry
+{
+	regex format;
+	string type;
+}
+
+struct token_entry
+{
+		
+}
+
+int main()
+{
+	// file 
+	ifstream file("prog.txt");
+	string line;
+
+	<vector>
+
+}
