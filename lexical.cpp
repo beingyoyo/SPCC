@@ -23,6 +23,9 @@ int main()
 	ifstream file("prog.txt");
 	string line;
 
-	<vector>
+	//Database
+	vector<token_format_entry> TokenFormat;
+	vector<token_entry> tokens;
 
+	//Read file
 }
