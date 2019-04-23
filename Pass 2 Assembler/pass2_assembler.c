@@ -85,7 +85,7 @@ int potSearch(char *str)
 		{
 			if (strcmp(str, "USING") == 0)
 			{
-				if (buffer[i][j+1] == '*')
+				if (buffer[i][j+1][0] == '*')
 				{
 					b_table.reg_val = lc;
 				}
