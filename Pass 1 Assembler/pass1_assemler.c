@@ -66,7 +66,7 @@ int potSearch(char *str)
 				{
 					lc += 2;
 				}
-				else if (buffer[i][j][1] == 'F')
+				else if (buffer[i][j+1][1] == 'F')
 				{
 					lc += ((buffer[i][j+1][0] - '0') * 4);
 				}
