@@ -15,7 +15,8 @@ void main()
 
     FILE *f1;
     f1=fopen("lexinput.txt","r");
-    if(f1==NULL){
+    if(f1==NULL)
+    {
         printf("File is empty");
         exit(0);
     }
